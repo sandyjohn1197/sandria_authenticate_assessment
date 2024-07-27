@@ -1,0 +1,37 @@
+import pytest
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+
+
+@pytest.fixture
+def driver():
+    options = Options()
+    options.add_experimental_option("detach", True)
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    yield driver
+    driver.quit()
+
+
+def test_neuralnine_links(driver):
+    driver.get("https://neuralnine.com/")
+    driver.maximize_window()
+
+    # Find all links on the page
+    links = driver.find_elements("xpath", "//a[@href]")
+
+    # Initialize a list to store book links
+    book_links = []
+
+    # Check each link for the word "Books" in its innerHTML
+    for link in links:
+        if "Books" in link.get_attribute("innerHTML"):
+            book_links.append(link.get_attribute("href"))
+
+    # Assert that at least one book link is found
+    assert len(book_links) > 0, "No book links found on the page"
+
+    # Optionally print the book links (for debugging purposes)
+    for book_link in book_links:
+        print(book_link)
