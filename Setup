@@ -1,0 +1,8 @@
+Install proper selenium webdrivers 
+pip install selenium
+pip install pytest
+pip install webdriver-manager
+
+
+Others are already added in the code.
+I have used pycharm for the testings.
