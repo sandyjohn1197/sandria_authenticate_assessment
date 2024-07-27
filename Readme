@@ -1,5 +1,16 @@
 1. The neuralnine._main file contains main code where I had explained and automation frame work for fetching the link of the books.
-2.As specified. To login in to amazon page we need AWS authentication and its not a difficult process , But I was so held up with my projects go-live and couldnt spend much time for the assesments, detailed explanation will be provided in mail.
+2.As specified,To login in to amazon page we need AWS authentication and create and AWS account to test end-points and its not a difficult process , But I was so held up with my projects go-live and couldnt spend much time for the assesments, detailed explanation will be provided in mail.
 3.neuralnine._pytest has the main test results 
 4. I havent done and testNG for this as pytest itself is a qualifier.
 5. Have provided screenshots of the test results.
+
+As a part of readme , I would also like to specify about my experience's gained in the current company.
+
+A. This company is mainly into infrastructure based development  , My work here for the past years has been on Automation's for handling incident, service now , different technologies like linux 
+and windows where automations where deveopled to check services , disk usage and many such stuffs, Also had worked on network based automaion's in accessing the end points (API)
+of the clients where details where provided and workflows where designed accordingly to monitor the entire ITIL standard's and update the ticktes based on the request. 
+ALL the service requests and change requests tickets where processed and hanldled with multiple automations. 
+Had Handled ansible tower's response to check job and status of any ansible tower where the main automationFrame work is to handle the complete ansible process.
+Had prepared multiple such automations for incident, NDM, change request and changetask.
+
+Amelia is a priavte own product , which has its own AIOPS tools to handle all such automated process from scratch to the end.
