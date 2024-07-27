@@ -1,0 +1,5 @@
+1. The neuralnine._main file contains main code where I had explained and automation frame work for fetching the link of the books.
+2.As specified. To login in to amazon page we need AWS authentication and its not a difficult process , But I was so held up with my projects go-live and couldnt spend much time for the assesments, detailed explanation will be provided in mail.
+3.neuralnine._pytest has the main test results 
+4. I havent done and testNG for this as pytest itself is a qualifier.
+5. Have provided screenshots of the test results.
